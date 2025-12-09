@@ -1,0 +1,106 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.43.1.0
+Copyright (C) 2025 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: SasSasADSDASD SADASD, AFSSDGSG, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.43.0.0
+Toolchain Path:  C:\Users\Abdullah\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.24
+Assembler:       Armasm.exe V6.24
+Linker/Locator:  ArmLink.exe V6.24
+Library Manager: ArmAr.exe V6.24
+Hex Converter:   FromElf.exe V6.24
+CPU DLL:         SARMCM3.DLL V5.43.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      UL2CM3.DLL V1.164.16.0
+Dialog DLL:      TCM.DLL V1.56.6.0
+ 
+<h2>Project:</h2>
+E:\My Projects\PayrollSys-32\main.uvprojx
+Project File Date:  12/09/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.24', folder: 'C:\Users\Abdullah\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target_1'
+"module2_attendanceData.s", line 57: Warning: A1581W: Added 2 bytes of padding at address 0x6e
+   57 00000070  END
+0 Errors, 1 Warning
+assembling module2_attendanceData.s...
+assembling module9_departmentalSalary.s...
+assembling module5_allowanceProcessor.s...
+"module7_netSalary.s", line 52: Warning: A1581W: Added 2 bytes of padding at address 0x6a
+   52 0000006c  END
+0 Errors, 1 Warning
+assembling module7_netSalary.s...
+"data.s", line 112: Warning: A1581W: Added 3 bytes of padding at address 0x215
+  112 00000218 sort_base DCD  0x20005000
+0 Errors, 1 Warning
+assembling data.s...
+"module1_structGenerator.s", line 109: Warning: A1581W: Added 2 bytes of padding at address 0x9a
+  109 0000009c  END
+0 Errors, 1 Warning
+assembling module1_structGenerator.s...
+assembling module6_taxComputation.s...
+assembling main.s...
+assembling module8_sortStruct.s...
+"module4_overtimeCalculation.s", line 60: Warning: A1581W: Added 2 bytes of padding at address 0x62
+   60 00000064  END
+0 Errors, 1 Warning
+assembling module4_overtimeCalculation.s...
+"module3_leaveManagement.s", line 48: Warning: A1581W: Added 2 bytes of padding at address 0x4e
+   48 00000050  END
+0 Errors, 1 Warning
+assembling module3_leaveManagement.s...
+assembling module10_bonusCalculator.s...
+compiling print.c...
+"module11_paySlip.s", line 148: Warning: A1471W: Directive LTORG may be in an executable position
+  148 00000188  LTORG
+"module11_paySlip.s", line 437: Warning: A1581W: Added 2 bytes of padding at address 0x52e
+  437 00000530  END
+0 Errors, 2 Warnings
+assembling module11_paySlip.s...
+compiling startup_ARMCM4.c...
+compiling system_ARMCM4.c...
+linking...
+.\Objects\main.axf: Warning: L6305W: Image does not have an entry point. (Not specified or not set due to multiple choices.)
+.\RTE\Device\ARMCM4\ARMCM4_ac6.sct(19): warning: L6314W: No section matches pattern *(.bss.noinit).
+Program Size: Code=3780 RO-data=992 RW-data=3744 ZI-data=3584  
+Finished: 0 information, 2 warning and 0 error messages.
+".\Objects\main.axf" - 0 Error(s), 2 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.2.0.pack
+                ARM::CMSIS@6.2.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.1
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.Cortex_DFP.1.1.0.pack
+                ARM::Cortex_DFP@1.1.0
+                ARM Cortex Reference Subsystems Device Family Pack
+   * Component: Startup Variant: C Startup Version: 2.2.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  C:/Users/Abdullah/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include
+  C:/Users/Abdullah/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM4/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.1.1
+
+   * Component: ARM::Device:Startup&C Startup@2.2.0
+      Source file:   Device/ARMCM4/Source/startup_ARMCM4.c
+      Source file:   Device/ARMCM4/Source/system_ARMCM4.c
+      Include file:  Device/ARMCM4/Include/ARMCM4.h
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>

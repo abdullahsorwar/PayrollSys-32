@@ -1,0 +1,21 @@
+--cpu=Cortex-M4.fp.sp
+".\objects\main.o"
+".\objects\data.o"
+".\objects\module1_structgenerator.o"
+".\objects\module2_attendancedata.o"
+".\objects\module3_leavemanagement.o"
+".\objects\module4_overtimecalculation.o"
+".\objects\module5_allowanceprocessor.o"
+".\objects\module6_taxcomputation.o"
+".\objects\module7_netsalary.o"
+".\objects\module8_sortstruct.o"
+".\objects\module9_departmentalsalary.o"
+".\objects\module10_bonuscalculator.o"
+".\objects\module11_payslip.o"
+".\objects\print.o"
+".\objects\startup_armcm4.o"
+".\objects\system_armcm4.o"
+--strict --scatter ".\RTE\Device\ARMCM4\ARMCM4_ac6.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\main.map" -o .\Objects\main.axf
