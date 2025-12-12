@@ -27,40 +27,40 @@ Project File Date:  12/12/2025
 <h2>Output:</h2>
 *** Using Compiler 'V6.24', folder: 'C:\Users\Abdullah\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin'
 Rebuild target 'Target_1'
+assembling module9_departmentalSalary.s...
+"module3_leaveManagement.s", line 48: Warning: A1581W: Added 2 bytes of padding at address 0x4e
+   48 00000050  END
+0 Errors, 1 Warning
+assembling module3_leaveManagement.s...
 "module2_attendanceData.s", line 57: Warning: A1581W: Added 2 bytes of padding at address 0x6e
    57 00000070  END
 0 Errors, 1 Warning
 assembling module2_attendanceData.s...
 assembling module8_sortStruct.s...
-"module3_leaveManagement.s", line 48: Warning: A1581W: Added 2 bytes of padding at address 0x4e
-   48 00000050  END
-0 Errors, 1 Warning
-assembling module3_leaveManagement.s...
-assembling module5_allowanceProcessor.s...
+assembling module6_taxComputation.s...
+assembling main.s...
 "data.s", line 120: Warning: A1581W: Added 1 bytes of padding at address 0x2eb
   120 000002ec sort_base DCD  0x20005000
 0 Errors, 1 Warning
 assembling data.s...
-"module7_netSalary.s", line 52: Warning: A1581W: Added 2 bytes of padding at address 0x6a
-   52 0000006c  END
-0 Errors, 1 Warning
-assembling module7_netSalary.s...
-assembling module9_departmentalSalary.s...
-assembling main.s...
-assembling module6_taxComputation.s...
-"module4_overtimeCalculation.s", line 60: Warning: A1581W: Added 2 bytes of padding at address 0x62
-   60 00000064  END
-0 Errors, 1 Warning
-assembling module4_overtimeCalculation.s...
+assembling module5_allowanceProcessor.s...
 "module1_structGenerator.s", line 109: Warning: A1581W: Added 2 bytes of padding at address 0x9a
   109 0000009c  END
 0 Errors, 1 Warning
 assembling module1_structGenerator.s...
+"module4_overtimeCalculation.s", line 60: Warning: A1581W: Added 2 bytes of padding at address 0x62
+   60 00000064  END
+0 Errors, 1 Warning
+assembling module4_overtimeCalculation.s...
+"module7_netSalary.s", line 52: Warning: A1581W: Added 2 bytes of padding at address 0x6a
+   52 0000006c  END
+0 Errors, 1 Warning
+assembling module7_netSalary.s...
 assembling module10_bonusCalculator.s...
+"module11_paySlip.s", line 438: Warning: A1488W: PROC/FUNC at line 427 in 'module11_paySlip.s' without matching ENDP/ENDFUNC
+  438 00000536 print_dummy  PROC
 "module11_paySlip.s", line 148: Warning: A1471W: Directive LTORG may be in an executable position
   148 00000188  LTORG
-"module11_paySlip.s", line 439: Warning: A1581W: Added 2 bytes of padding at address 0x536
-  439 00000538  END
 0 Errors, 2 Warnings
 assembling module11_paySlip.s...
 compiling startup_ARMCM4.c...
@@ -68,7 +68,7 @@ compiling system_ARMCM4.c...
 linking...
 .\Objects\main.axf: Warning: L6305W: Image does not have an entry point. (Not specified or not set due to multiple choices.)
 .\RTE\Device\ARMCM4\ARMCM4_ac6.sct(19): warning: L6314W: No section matches pattern *(.bss.noinit).
-Program Size: Code=3772 RO-data=992 RW-data=3968 ZI-data=3584  
+Program Size: Code=3800 RO-data=992 RW-data=3968 ZI-data=3584  
 Finished: 0 information, 2 warning and 0 error messages.
 ".\Objects\main.axf" - 0 Error(s), 2 Warning(s).
 
@@ -96,8 +96,8 @@ Package Vendor: ARM
    * Component: ARM::CMSIS:CORE@6.1.1
 
    * Component: ARM::Device:Startup&C Startup@2.2.0
-      Source file:   Device/ARMCM4/Source/startup_ARMCM4.c
       Source file:   Device/ARMCM4/Source/system_ARMCM4.c
+      Source file:   Device/ARMCM4/Source/startup_ARMCM4.c
       Include file:  Device/ARMCM4/Include/ARMCM4.h
 Build Time Elapsed:  00:00:01
 </pre>

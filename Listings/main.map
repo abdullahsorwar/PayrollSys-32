@@ -324,31 +324,32 @@ Image Symbol Table
     $v0                                      0x00000748   Number         0  module10_bonuscalculator.o(module10Main)
     module10Main                             0x00000748   Section      160  module10_bonuscalculator.o(module10Main)
     $v0                                      0x000007e8   Number         0  module11_payslip.o(module11Main)
-    module11Main                             0x000007e8   Section     1352  module11_payslip.o(module11Main)
-    print_string                             0x00000cdf   Thumb Code    34  module11_payslip.o(module11Main)
-    print_dummy                              0x00000d01   Thumb Code    30  module11_payslip.o(module11Main)
-    $v0                                      0x00000d30   Number         0  module1_structgenerator.o(module1Main)
-    module1Main                              0x00000d30   Section      216  module1_structgenerator.o(module1Main)
-    $v0                                      0x00000e08   Number         0  module2_attendancedata.o(module2Main)
-    module2Main                              0x00000e08   Section      136  module2_attendancedata.o(module2Main)
-    $v0                                      0x00000e90   Number         0  module3_leavemanagement.o(module3Main)
-    module3Main                              0x00000e90   Section       92  module3_leavemanagement.o(module3Main)
-    $v0                                      0x00000eec   Number         0  module4_overtimecalculation.o(module4Main)
-    module4Main                              0x00000eec   Section      112  module4_overtimecalculation.o(module4Main)
-    $v0                                      0x00000f5c   Number         0  module5_allowanceprocessor.o(module5Main)
-    module5Main                              0x00000f5c   Section      144  module5_allowanceprocessor.o(module5Main)
-    $v0                                      0x00000fec   Number         0  module6_taxcomputation.o(module6Main)
-    module6Main                              0x00000fec   Section      184  module6_taxcomputation.o(module6Main)
-    $v0                                      0x000010a4   Number         0  module7_netsalary.o(module7Main)
-    module7Main                              0x000010a4   Section      120  module7_netsalary.o(module7Main)
-    $v0                                      0x0000111c   Number         0  module8_sortstruct.o(module8Main)
-    module8Main                              0x0000111c   Section      184  module8_sortstruct.o(module8Main)
-    $v0                                      0x000011d4   Number         0  module9_departmentalsalary.o(module9Main)
-    module9Main                              0x000011d4   Section       96  module9_departmentalsalary.o(module9Main)
-    $v0                                      0x00001234   Number         0  main.o(payRollSysMain)
-    payRollSysMain                           0x00001234   Section       46  main.o(payRollSysMain)
-    $v0                                      0x00001262   Number         0  fpinit.o(x$fpl$fpinit)
-    x$fpl$fpinit                             0x00001262   Section       26  fpinit.o(x$fpl$fpinit)
+    module11Main                             0x000007e8   Section     1380  module11_payslip.o(module11Main)
+    print_string                             0x00000cdf   Thumb Code    38  module11_payslip.o(module11Main)
+    time_loop                                0x00000d05   Thumb Code    26  module11_payslip.o(module11Main)
+    print_dummy                              0x00000d1f   Thumb Code    30  module11_payslip.o(module11Main)
+    $v0                                      0x00000d4c   Number         0  module1_structgenerator.o(module1Main)
+    module1Main                              0x00000d4c   Section      216  module1_structgenerator.o(module1Main)
+    $v0                                      0x00000e24   Number         0  module2_attendancedata.o(module2Main)
+    module2Main                              0x00000e24   Section      136  module2_attendancedata.o(module2Main)
+    $v0                                      0x00000eac   Number         0  module3_leavemanagement.o(module3Main)
+    module3Main                              0x00000eac   Section       92  module3_leavemanagement.o(module3Main)
+    $v0                                      0x00000f08   Number         0  module4_overtimecalculation.o(module4Main)
+    module4Main                              0x00000f08   Section      112  module4_overtimecalculation.o(module4Main)
+    $v0                                      0x00000f78   Number         0  module5_allowanceprocessor.o(module5Main)
+    module5Main                              0x00000f78   Section      144  module5_allowanceprocessor.o(module5Main)
+    $v0                                      0x00001008   Number         0  module6_taxcomputation.o(module6Main)
+    module6Main                              0x00001008   Section      184  module6_taxcomputation.o(module6Main)
+    $v0                                      0x000010c0   Number         0  module7_netsalary.o(module7Main)
+    module7Main                              0x000010c0   Section      120  module7_netsalary.o(module7Main)
+    $v0                                      0x00001138   Number         0  module8_sortstruct.o(module8Main)
+    module8Main                              0x00001138   Section      184  module8_sortstruct.o(module8Main)
+    $v0                                      0x000011f0   Number         0  module9_departmentalsalary.o(module9Main)
+    module9Main                              0x000011f0   Section       96  module9_departmentalsalary.o(module9Main)
+    $v0                                      0x00001250   Number         0  main.o(payRollSysMain)
+    payRollSysMain                           0x00001250   Section       46  main.o(payRollSysMain)
+    $v0                                      0x0000127e   Number         0  fpinit.o(x$fpl$fpinit)
+    x$fpl$fpinit                             0x0000127e   Section       26  fpinit.o(x$fpl$fpinit)
     payRollSysData                           0x20010000   Section     3964  data.o(payRollSysData)
     name1                                    0x20010028   Data          16  data.o(payRollSysData)
     name2                                    0x20010038   Data          25  data.o(payRollSysData)
@@ -547,21 +548,21 @@ Image Symbol Table
     SystemInit                               0x00000711   Thumb Code    54  system_armcm4.o(.text.SystemInit)
     module10_bonusCalculator                 0x00000749   Thumb Code   144  module10_bonuscalculator.o(module10Main)
     module11_paySlip                         0x000007e9   Thumb Code   260  module11_payslip.o(module11Main)
-    module1_structGenerator                  0x00000d31   Thumb Code   154  module1_structgenerator.o(module1Main)
-    module2_attendanceData                   0x00000e09   Thumb Code   110  module2_attendancedata.o(module2Main)
-    module3_leaveManagement                  0x00000e91   Thumb Code    78  module3_leavemanagement.o(module3Main)
-    module4_overtimeCalculation              0x00000eed   Thumb Code    98  module4_overtimecalculation.o(module4Main)
-    module5_allowanceProcessor               0x00000f5d   Thumb Code   132  module5_allowanceprocessor.o(module5Main)
-    module6_taxComputation                   0x00000fed   Thumb Code   168  module6_taxcomputation.o(module6Main)
-    module7_netSalary                        0x000010a5   Thumb Code   106  module7_netsalary.o(module7Main)
-    module8_sortStruct                       0x0000111d   Thumb Code   168  module8_sortstruct.o(module8Main)
-    module9_departmentalSalary               0x000011d5   Thumb Code    80  module9_departmentalsalary.o(module9Main)
-    main                                     0x00001235   Thumb Code     0  main.o(payRollSysMain)
-    _fp_init                                 0x00001263   Thumb Code    26  fpinit.o(x$fpl$fpinit)
-    __fplib_config_fpu_vfp                   0x0000127b   Thumb Code     0  fpinit.o(x$fpl$fpinit)
-    __fplib_config_pureend_doubles           0x0000127b   Thumb Code     0  fpinit.o(x$fpl$fpinit)
-    Region$$Table$$Base                      0x0000127c   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x0000129c   Number         0  anon$$obj.o(Region$$Table)
+    module1_structGenerator                  0x00000d4d   Thumb Code   154  module1_structgenerator.o(module1Main)
+    module2_attendanceData                   0x00000e25   Thumb Code   110  module2_attendancedata.o(module2Main)
+    module3_leaveManagement                  0x00000ead   Thumb Code    78  module3_leavemanagement.o(module3Main)
+    module4_overtimeCalculation              0x00000f09   Thumb Code    98  module4_overtimecalculation.o(module4Main)
+    module5_allowanceProcessor               0x00000f79   Thumb Code   132  module5_allowanceprocessor.o(module5Main)
+    module6_taxComputation                   0x00001009   Thumb Code   168  module6_taxcomputation.o(module6Main)
+    module7_netSalary                        0x000010c1   Thumb Code   106  module7_netsalary.o(module7Main)
+    module8_sortStruct                       0x00001139   Thumb Code   168  module8_sortstruct.o(module8Main)
+    module9_departmentalSalary               0x000011f1   Thumb Code    80  module9_departmentalsalary.o(module9Main)
+    main                                     0x00001251   Thumb Code     0  main.o(payRollSysMain)
+    _fp_init                                 0x0000127f   Thumb Code    26  fpinit.o(x$fpl$fpinit)
+    __fplib_config_fpu_vfp                   0x00001297   Thumb Code     0  fpinit.o(x$fpl$fpinit)
+    __fplib_config_pureend_doubles           0x00001297   Thumb Code     0  fpinit.o(x$fpl$fpinit)
+    Region$$Table$$Base                      0x00001298   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x000012b8   Number         0  anon$$obj.o(Region$$Table)
     SystemCoreClock                          0x20000000   Data           4  system_armcm4.o(.data.SystemCoreClock)
     struct_base                              0x20010000   Data           4  data.o(payRollSysData)
     struct_num                               0x20010004   Data           4  data.o(payRollSysData)
@@ -600,9 +601,9 @@ Memory Map of the image
 
   Image entry point : Not specified.
 
-  Load Region LR_ROM (Base: 0x00000000, Size: 0x0000221c, Max: 0x00080000, ABSOLUTE, COMPRESSED[0x000016e0])
+  Load Region LR_ROM (Base: 0x00000000, Size: 0x00002238, Max: 0x00080000, ABSOLUTE, COMPRESSED[0x000016fc])
 
-    Execution Region ER_ROM (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x0000129c, Max: 0x00080000, ABSOLUTE)
+    Execution Region ER_ROM (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x000012b8, Max: 0x00080000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -678,48 +679,48 @@ Memory Map of the image
     0x00000710   0x00000710   0x00000036   Code   RO           70    .text.SystemInit    system_armcm4.o
     0x00000746   0x00000746   0x00000002   PAD
     0x00000748   0x00000748   0x000000a0   Code   RO           45    module10Main        module10_bonuscalculator.o
-    0x000007e8   0x000007e8   0x00000548   Code   RO           49    module11Main        module11_payslip.o
-    0x00000d30   0x00000d30   0x000000d8   Code   RO            9    module1Main         module1_structgenerator.o
-    0x00000e08   0x00000e08   0x00000088   Code   RO           13    module2Main         module2_attendancedata.o
-    0x00000e90   0x00000e90   0x0000005c   Code   RO           17    module3Main         module3_leavemanagement.o
-    0x00000eec   0x00000eec   0x00000070   Code   RO           21    module4Main         module4_overtimecalculation.o
-    0x00000f5c   0x00000f5c   0x00000090   Code   RO           25    module5Main         module5_allowanceprocessor.o
-    0x00000fec   0x00000fec   0x000000b8   Code   RO           29    module6Main         module6_taxcomputation.o
-    0x000010a4   0x000010a4   0x00000078   Code   RO           33    module7Main         module7_netsalary.o
-    0x0000111c   0x0000111c   0x000000b8   Code   RO           37    module8Main         module8_sortstruct.o
-    0x000011d4   0x000011d4   0x00000060   Code   RO           41    module9Main         module9_departmentalsalary.o
-    0x00001234   0x00001234   0x0000002e   Code   RO            3  * payRollSysMain      main.o
-    0x00001262   0x00001262   0x0000001a   Code   RO          186    x$fpl$fpinit        fz_wm.l(fpinit.o)
-    0x0000127c   0x0000127c   0x00000020   Data   RO          258    Region$$Table       anon$$obj.o
+    0x000007e8   0x000007e8   0x00000564   Code   RO           49    module11Main        module11_payslip.o
+    0x00000d4c   0x00000d4c   0x000000d8   Code   RO            9    module1Main         module1_structgenerator.o
+    0x00000e24   0x00000e24   0x00000088   Code   RO           13    module2Main         module2_attendancedata.o
+    0x00000eac   0x00000eac   0x0000005c   Code   RO           17    module3Main         module3_leavemanagement.o
+    0x00000f08   0x00000f08   0x00000070   Code   RO           21    module4Main         module4_overtimecalculation.o
+    0x00000f78   0x00000f78   0x00000090   Code   RO           25    module5Main         module5_allowanceprocessor.o
+    0x00001008   0x00001008   0x000000b8   Code   RO           29    module6Main         module6_taxcomputation.o
+    0x000010c0   0x000010c0   0x00000078   Code   RO           33    module7Main         module7_netsalary.o
+    0x00001138   0x00001138   0x000000b8   Code   RO           37    module8Main         module8_sortstruct.o
+    0x000011f0   0x000011f0   0x00000060   Code   RO           41    module9Main         module9_departmentalsalary.o
+    0x00001250   0x00001250   0x0000002e   Code   RO            3  * payRollSysMain      main.o
+    0x0000127e   0x0000127e   0x0000001a   Code   RO          186    x$fpl$fpinit        fz_wm.l(fpinit.o)
+    0x00001298   0x00001298   0x00000020   Data   RO          258    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_NOINIT (Exec base: 0x20000000, Load base: 0x0000129c, Size: 0x00000000, Max: 0x0003f200, ABSOLUTE, UNINIT)
+    Execution Region RW_NOINIT (Exec base: 0x20000000, Load base: 0x000012b8, Size: 0x00000000, Max: 0x0003f200, ABSOLUTE, UNINIT)
 
     **** No section assigned to this execution region ****
 
 
-    Execution Region RW_RAM (Exec base: 0x20000000, Load base: 0x0000129c, Size: 0x00000004, Max: 0x0003f200, ABSOLUTE)
+    Execution Region RW_RAM (Exec base: 0x20000000, Load base: 0x000012b8, Size: 0x00000004, Max: 0x0003f200, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x0000129c   0x00000004   Data   RW           72    .data.SystemCoreClock  system_armcm4.o
+    0x20000000   0x000012b8   0x00000004   Data   RW           72    .data.SystemCoreClock  system_armcm4.o
 
 
-    Execution Region RW_DATA (Exec base: 0x20010000, Load base: 0x000012a0, Size: 0x00000f7c, Max: 0x00010000, ABSOLUTE, COMPRESSED[0x00000440])
+    Execution Region RW_DATA (Exec base: 0x20010000, Load base: 0x000012bc, Size: 0x00000f7c, Max: 0x00010000, ABSOLUTE, COMPRESSED[0x00000440])
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x20010000   COMPRESSED   0x00000f7c   Data   RW            8    payRollSysData      data.o
 
 
-    Execution Region ARM_LIB_HEAP (Exec base: 0x20010f80, Load base: 0x000016e0, Size: 0x00000c00, Max: 0x00000c00, ABSOLUTE)
+    Execution Region ARM_LIB_HEAP (Exec base: 0x20010f80, Load base: 0x000016fc, Size: 0x00000c00, Max: 0x00000c00, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x20010f80        -       0x00000c00   Zero   RW            1    ARM_LIB_HEAP.bss    anon$$obj.o
 
 
-    Execution Region ARM_LIB_STACK (Exec base: 0x2003fe00, Load base: 0x000016e0, Size: 0x00000200, Max: 0x00000200, ABSOLUTE)
+    Execution Region ARM_LIB_STACK (Exec base: 0x2003fe00, Load base: 0x000016fc, Size: 0x00000200, Max: 0x00000200, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -736,7 +737,7 @@ Image component sizes
          0          0          0       3964          0          0   data.o
         46          0          0          0          0        228   main.o
        160         16          0          0          0        424   module10_bonuscalculator.o
-      1352         50          0          0          0        784   module11_payslip.o
+      1380         48          0          0          0        824   module11_payslip.o
        216         62          0          0          0        428   module1_structgenerator.o
        136         26          0          0          0        404   module2_attendancedata.o
         92         14          0          0          0        400   module3_leavemanagement.o
@@ -750,7 +751,7 @@ Image component sizes
         54          0          0          4          0       1491   system_armcm4.o
 
     ----------------------------------------------------------------------
-      2914        256        992       3968       3584       7482   Object Totals
+      2942        254        992       3968       3584       7522   Object Totals
          0          0         32          0       3584          0   (incl. Generated)
          2          0          0          0          0          0   (incl. Padding)
 
@@ -808,15 +809,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      3772        338        992       3968       3584       7298   Grand Totals
-      3772        338        992       1092       3584       7298   ELF Image Totals (compressed)
-      3772        338        992       1092          0          0   ROM Totals
+      3800        336        992       3968       3584       7338   Grand Totals
+      3800        336        992       1092       3584       7338   ELF Image Totals (compressed)
+      3800        336        992       1092          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 4764 (   4.65kB)
+    Total RO  Size (Code + RO Data)                 4792 (   4.68kB)
     Total RW  Size (RW Data + ZI Data)              7552 (   7.38kB)
-    Total ROM Size (Code + RO Data + RW Data)       5856 (   5.72kB)
+    Total ROM Size (Code + RO Data + RW Data)       5884 (   5.75kB)
 
 ==============================================================================
 

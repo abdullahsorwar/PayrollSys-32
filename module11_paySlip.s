@@ -419,10 +419,22 @@ byte_transmit
 	CMP		r0, #0			; null character
 	POPEQ	{pc}
 	STRB	r0, [r10]
+	BL		time_loop
 	ADD		r9, #1
 	B		byte_transmit
 	ENDP
-		
+
+time_loop	PROC
+	PUSH	{r11, r12, lr}
+	MOV		r11, #0
+	LDR		r12, =10000
+	
+looping
+	CMP		r11, r12
+	POPEQ	{r11, r12, pc}
+	ADD		r11, #1
+	B		looping
+
 print_dummy		PROC
 	PUSH	{lr}
 	
