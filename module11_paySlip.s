@@ -8,7 +8,7 @@
 	IMPORT	int_dum
 	IMPORT	nl
 	IMPORT 	dept_name
-	IMPORT	ITM_SendChar_C
+	IMPORT	ITM
 		
 module11_paySlip	PROC
 	PUSH	{lr}
@@ -411,12 +411,14 @@ salary
 print_string	PROC
 	PUSH	{lr}
 	MOV		r9, #0
+	LDR		r10, =ITM
+	LDR		r10, [r10]
 	
 byte_transmit
 	LDRB	r0, [r8, r9]
 	CMP		r0, #0			; null character
 	POPEQ	{pc}
-	BL		ITM_SendChar_C
+	STRB	r0, [r10]
 	ADD		r9, #1
 	B		byte_transmit
 	ENDP

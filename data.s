@@ -23,12 +23,13 @@
 	EXPORT	int_dum
 	EXPORT	nl
 	EXPORT	dept_name
+	EXPORT	ITM
 
 data_init
 
 ; Base addresses for manipulation
 struct_base	DCD		0x20000000
-struct_num	DCD		5
+struct_num	DCD		7
 struct_size	DCD		38
 	
 ; Alignment
@@ -50,7 +51,7 @@ struct_size	DCD		38
 
 ; Employee IDs
 	ALIGN
-emp_id		DCD		1001,1002,1003,1004,1005
+emp_id		DCD		1001,1002,1003,1004,1005,1006,1007
 
 ; Names
 name1		DCB		"Ahmed Ibne Reza",0
@@ -58,24 +59,26 @@ name2		DCB		"Rokon-Uz-Zaman Chowdhury",0
 name3		DCB		"Amrina Afroz",0
 name4		DCB		"Md. Sazidul Islam",0
 name5		DCB		"Mahima Akter Rima",0
+name6		DCB		"Md. Abdur Rahman Chowdhury",0
+name7		DCB		"Jarir Mashrook Dausi",0
 
 ; Name Pointer
 	ALIGN
-name_ptr	DCD		name1, name2, name3, name4, name5
+name_ptr	DCD		name1, name2, name3, name4, name5, name6, name7
 
 ; Salaries
 	ALIGN
-salary		DCD		50000, 120000, 60000, 90000, 140000
+salary		DCD		50000, 120000, 60000, 90000, 140000, 120000, 80000
 
 ; Job Grades
-grade		DCB		2, 1, 2, 3, 1 ; 1: A, 2: B, 3: C
+grade		DCB		2, 1, 2, 3, 1, 1, 3 ; 1: A, 2: B, 3: C
 
 ; Dept. Codes
-dept_code	DCB		3, 2, 3, 1, 2 ; 1: Admin, 2: HR, 3: IT
+dept_code	DCB		3, 2, 3, 1, 2, 2, 3 ; 1: Admin, 2: HR, 3: IT
 
 ; Account No.s
 	ALIGN
-account		DCD		2000590100, 2000145200, 2000347500, 2000154400, 2000745500
+account		DCD		2000590100, 2000145200, 2000347500, 2000154400, 2000745500, 200078401, 200047514
 
 ; Attendance Pointer
 attptr_base	DCD		0x20001000
@@ -87,10 +90,12 @@ att2		DCB		1,1,0,0,1,0,1,1,0,1,1,1,0,1,0,1,1,0,1,0,1,1,1,1,0,1,0,1,0,1,1
 att3		DCB		1,0,0,0,1,0,1,1,0,1,1,0,0,1,1,1,1,0,0,0,1,1,1,1,0,1,0,1,1,1,0
 att4		DCB		1,1,1,1,0,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,0,1,1,0,1,1,1,1
 att5		DCB		0,0,1,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,0
+att6		DCB		1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1
+att7		DCB		1,1,1,1,0,0,1,1,1,1,1,1,0,1,1,1,1,0,0,0,1,1,1,1,1,1,0,1,1,0,1
 
 ; Linker of Attendance
 	ALIGN
-link_att	DCD		att1, att2, att3, att4, att5	
+link_att	DCD		att1, att2, att3, att4, att5, att6, att7
 
 ; Allowance Table Pointer
 allow_base	DCD		0x20003000
@@ -102,11 +107,14 @@ pr2			DCD		0, 0, 0, 0, 0, 0
 pr3			DCD		0, 0, 0, 0, 0, 0
 pr4			DCD		0, 0, 0, 0, 0, 0
 pr5			DCD		0, 0, 0, 0, 0, 0
+pr6			DCD		0, 0, 0, 0, 0, 0
+pr7			DCD		0, 0, 0, 0, 0, 0
+
 	ALIGN
-payroll		DCD		pr1, pr2, pr3, pr4, pr5
+payroll		DCD		pr1, pr2, pr3, pr4, pr5, pr6, pr7
 	
 ; Overtime
-overtime	DCB		17, 22, 8, 20, 12  
+overtime	DCB		17, 22, 8, 20, 12, 3, 8
 
 ; Sort Base
 sort_base	DCD		0x20005000
@@ -115,7 +123,7 @@ sort_base	DCD		0x20005000
 d_summary	DCD		0, 0, 0				; total_Admin, total_HR, total_IT
 
 ; Performance
-perform		DCD		80, 87, 73, 94, 90		
+perform		DCD		80, 87, 73, 94, 90, 92, 84
 
 ; payslip_structure
 line_1			DCB		"   __________________________________________________________ ",0
@@ -176,6 +184,9 @@ hr				DCB		"HR",0
 i_t				DCB		"IT",0
 	ALIGN
 dept_name		DCD		admin, hr, i_t
+
+;ITM Stimulus Port
+ITM				DCD		0xE0000000
 
 data_end
 	END

@@ -449,11 +449,6 @@
               <FileType>2</FileType>
               <FilePath>.\module11_paySlip.s</FilePath>
             </File>
-            <File>
-              <FileName>print.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\print.c</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>

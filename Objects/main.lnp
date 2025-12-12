@@ -12,7 +12,6 @@
 ".\objects\module9_departmentalsalary.o"
 ".\objects\module10_bonuscalculator.o"
 ".\objects\module11_payslip.o"
-".\objects\print.o"
 ".\objects\startup_armcm4.o"
 ".\objects\system_armcm4.o"
 --strict --scatter ".\RTE\Device\ARMCM4\ARMCM4_ac6.sct"

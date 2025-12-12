@@ -26,8 +26,6 @@ Section Cross References
     module9_departmentalsalary.o(module9Main) refers to data.o(payRollSysData) for struct_base
     module10_bonuscalculator.o(module10Main) refers to data.o(payRollSysData) for struct_base
     module11_payslip.o(module11Main) refers to data.o(payRollSysData) for struct_num
-    module11_payslip.o(module11Main) refers to print.o(.text.ITM_SendChar_C) for ITM_SendChar_C
-    print.o(.ARM.exidx.text.ITM_SendChar_C) refers to print.o(.text.ITM_SendChar_C) for [Anonymous Symbol]
     startup_armcm4.o(.ARM.exidx.text.Default_Handler) refers to startup_armcm4.o(.text.Default_Handler) for [Anonymous Symbol]
     startup_armcm4.o(.text.Reset_Handler) refers to system_armcm4.o(.text.SystemInit) for SystemInit
     startup_armcm4.o(.text.Reset_Handler) refers to __main.o(!!!main) for __main
@@ -164,8 +162,6 @@ Section Cross References
 
 Removing Unused input sections from the image.
 
-    Removing print.o(.text), (0 bytes).
-    Removing print.o(.ARM.exidx.text.ITM_SendChar_C), (8 bytes).
     Removing startup_armcm4.o(.text), (0 bytes).
     Removing startup_armcm4.o(.ARM.exidx.text.Default_Handler), (8 bytes).
     Removing startup_armcm4.o(.ARM.exidx.text.Reset_Handler), (8 bytes).
@@ -175,7 +171,7 @@ Removing Unused input sections from the image.
     Removing system_armcm4.o(.ARM.exidx.text.SystemCoreClockUpdate), (8 bytes).
     Removing system_armcm4.o(.ARM.exidx.text.SystemInit), (8 bytes).
 
-10 unused section(s) (total 68 bytes) removed from the image.
+8 unused section(s) (total 60 bytes) removed from the image.
 
 ==============================================================================
 
@@ -254,7 +250,6 @@ Image Symbol Table
     module7_netSalary.s                      0x00000000   Number         0  module7_netsalary.o ABSOLUTE
     module8_sortStruct.s                     0x00000000   Number         0  module8_sortstruct.o ABSOLUTE
     module9_departmentalSalary.s             0x00000000   Number         0  module9_departmentalsalary.o ABSOLUTE
-    print.c                                  0x00000000   Number         0  print.o ABSOLUTE
     startup_ARMCM4.c                         0x00000000   Number         0  startup_armcm4.o ABSOLUTE
     system_ARMCM4.c                          0x00000000   Number         0  system_armcm4.o ABSOLUTE
     !!!main                                  0x000003c0   Section        8  __main.o(!!!main)
@@ -324,101 +319,106 @@ Image Symbol Table
     .text                                    0x000006f2   Section        0  sys_wrch.o(.text)
     [Anonymous Symbol]                       0x00000700   Section        0  startup_armcm4.o(.text.Default_Handler)
     [Anonymous Symbol]                       0x00000704   Section        0  startup_armcm4.o(.text.HardFault_Handler)
-    [Anonymous Symbol]                       0x00000708   Section        0  print.o(.text.ITM_SendChar_C)
-    [Anonymous Symbol]                       0x0000071c   Section        0  startup_armcm4.o(.text.Reset_Handler)
-    [Anonymous Symbol]                       0x00000724   Section        0  system_armcm4.o(.text.SystemInit)
-    $v0                                      0x0000075c   Number         0  module10_bonuscalculator.o(module10Main)
-    module10Main                             0x0000075c   Section      160  module10_bonuscalculator.o(module10Main)
-    $v0                                      0x000007fc   Number         0  module11_payslip.o(module11Main)
-    module11Main                             0x000007fc   Section     1340  module11_payslip.o(module11Main)
-    print_string                             0x00000cf3   Thumb Code    26  module11_payslip.o(module11Main)
-    print_dummy                              0x00000d0d   Thumb Code    30  module11_payslip.o(module11Main)
-    $v0                                      0x00000d38   Number         0  module1_structgenerator.o(module1Main)
-    module1Main                              0x00000d38   Section      216  module1_structgenerator.o(module1Main)
-    $v0                                      0x00000e10   Number         0  module2_attendancedata.o(module2Main)
-    module2Main                              0x00000e10   Section      136  module2_attendancedata.o(module2Main)
-    $v0                                      0x00000e98   Number         0  module3_leavemanagement.o(module3Main)
-    module3Main                              0x00000e98   Section       92  module3_leavemanagement.o(module3Main)
-    $v0                                      0x00000ef4   Number         0  module4_overtimecalculation.o(module4Main)
-    module4Main                              0x00000ef4   Section      112  module4_overtimecalculation.o(module4Main)
-    $v0                                      0x00000f64   Number         0  module5_allowanceprocessor.o(module5Main)
-    module5Main                              0x00000f64   Section      144  module5_allowanceprocessor.o(module5Main)
-    $v0                                      0x00000ff4   Number         0  module6_taxcomputation.o(module6Main)
-    module6Main                              0x00000ff4   Section      184  module6_taxcomputation.o(module6Main)
-    $v0                                      0x000010ac   Number         0  module7_netsalary.o(module7Main)
-    module7Main                              0x000010ac   Section      120  module7_netsalary.o(module7Main)
-    $v0                                      0x00001124   Number         0  module8_sortstruct.o(module8Main)
-    module8Main                              0x00001124   Section      184  module8_sortstruct.o(module8Main)
-    $v0                                      0x000011dc   Number         0  module9_departmentalsalary.o(module9Main)
-    module9Main                              0x000011dc   Section       96  module9_departmentalsalary.o(module9Main)
-    $v0                                      0x0000123c   Number         0  main.o(payRollSysMain)
-    payRollSysMain                           0x0000123c   Section       46  main.o(payRollSysMain)
-    $v0                                      0x0000126a   Number         0  fpinit.o(x$fpl$fpinit)
-    x$fpl$fpinit                             0x0000126a   Section       26  fpinit.o(x$fpl$fpinit)
-    payRollSysData                           0x20010000   Section     3740  data.o(payRollSysData)
-    name1                                    0x20010020   Data          16  data.o(payRollSysData)
-    name2                                    0x20010030   Data          25  data.o(payRollSysData)
-    name3                                    0x20010049   Data          13  data.o(payRollSysData)
-    name4                                    0x20010056   Data          18  data.o(payRollSysData)
-    name5                                    0x20010068   Data          18  data.o(payRollSysData)
-    att1                                     0x200100cc   Data          31  data.o(payRollSysData)
-    att2                                     0x200100eb   Data          31  data.o(payRollSysData)
-    att3                                     0x2001010a   Data          31  data.o(payRollSysData)
-    att4                                     0x20010129   Data          31  data.o(payRollSysData)
-    att5                                     0x20010148   Data          31  data.o(payRollSysData)
-    pr1                                      0x20010184   Data          24  data.o(payRollSysData)
-    pr2                                      0x2001019c   Data          24  data.o(payRollSysData)
-    pr3                                      0x200101b4   Data          24  data.o(payRollSysData)
-    pr4                                      0x200101cc   Data          24  data.o(payRollSysData)
-    pr5                                      0x200101e4   Data          24  data.o(payRollSysData)
-    line_1                                   0x2001023c   Data          63  data.o(payRollSysData)
-    line_2                                   0x2001027b   Data          63  data.o(payRollSysData)
-    header                                   0x200102ba   Data          63  data.o(payRollSysData)
-    line_3                                   0x200102f9   Data          63  data.o(payRollSysData)
-    line_4                                   0x20010338   Data          63  data.o(payRollSysData)
-    line_5                                   0x20010377   Data          63  data.o(payRollSysData)
-    line_id                                  0x200103b6   Data          63  data.o(payRollSysData)
-    line_name                                0x200103f5   Data          63  data.o(payRollSysData)
-    line_grade                               0x20010434   Data          63  data.o(payRollSysData)
-    line_dept                                0x20010473   Data          63  data.o(payRollSysData)
-    line_6                                   0x200104b2   Data          63  data.o(payRollSysData)
-    line_7                                   0x200104f1   Data          63  data.o(payRollSysData)
-    line_acc                                 0x20010530   Data          63  data.o(payRollSysData)
-    line_8                                   0x2001056f   Data          63  data.o(payRollSysData)
-    line_9                                   0x200105ae   Data          63  data.o(payRollSysData)
-    line_att                                 0x200105ed   Data          63  data.o(payRollSysData)
-    line_10                                  0x2001062c   Data          63  data.o(payRollSysData)
-    line_11                                  0x2001066b   Data          63  data.o(payRollSysData)
-    line_work                                0x200106aa   Data          63  data.o(payRollSysData)
-    line_present                             0x200106e9   Data          63  data.o(payRollSysData)
-    line_12                                  0x20010728   Data          63  data.o(payRollSysData)
-    line_13                                  0x20010767   Data          63  data.o(payRollSysData)
-    line_salary                              0x200107a6   Data          63  data.o(payRollSysData)
-    line_14                                  0x200107e5   Data          63  data.o(payRollSysData)
-    line_15                                  0x20010824   Data          63  data.o(payRollSysData)
-    line_base                                0x20010863   Data          63  data.o(payRollSysData)
-    line_allow                               0x200108a2   Data          63  data.o(payRollSysData)
-    line_hra                                 0x200108e1   Data          63  data.o(payRollSysData)
-    line_med                                 0x20010920   Data          63  data.o(payRollSysData)
-    line_trans                               0x2001095f   Data          63  data.o(payRollSysData)
-    line_over                                0x2001099e   Data          63  data.o(payRollSysData)
-    line_tax                                 0x200109dd   Data          63  data.o(payRollSysData)
-    line_leave                               0x20010a1c   Data          63  data.o(payRollSysData)
-    line_16                                  0x20010a5b   Data          63  data.o(payRollSysData)
-    line_net                                 0x20010a9a   Data          63  data.o(payRollSysData)
-    line_bonus                               0x20010ad9   Data          63  data.o(payRollSysData)
-    line_17                                  0x20010b18   Data          63  data.o(payRollSysData)
-    line_final                               0x20010b57   Data          63  data.o(payRollSysData)
-    line_18                                  0x20010b96   Data          63  data.o(payRollSysData)
-    line_19                                  0x20010bd5   Data          63  data.o(payRollSysData)
-    line_20                                  0x20010c14   Data          63  data.o(payRollSysData)
-    line_21                                  0x20010c53   Data          63  data.o(payRollSysData)
-    line_22                                  0x20010c92   Data          63  data.o(payRollSysData)
-    blank_1                                  0x20010cd1   Data          63  data.o(payRollSysData)
-    blank_2                                  0x20010d10   Data          63  data.o(payRollSysData)
-    admin                                    0x20010e84   Data           6  data.o(payRollSysData)
-    hr                                       0x20010e8a   Data           3  data.o(payRollSysData)
-    i_t                                      0x20010e8d   Data           3  data.o(payRollSysData)
+    [Anonymous Symbol]                       0x00000708   Section        0  startup_armcm4.o(.text.Reset_Handler)
+    [Anonymous Symbol]                       0x00000710   Section        0  system_armcm4.o(.text.SystemInit)
+    $v0                                      0x00000748   Number         0  module10_bonuscalculator.o(module10Main)
+    module10Main                             0x00000748   Section      160  module10_bonuscalculator.o(module10Main)
+    $v0                                      0x000007e8   Number         0  module11_payslip.o(module11Main)
+    module11Main                             0x000007e8   Section     1352  module11_payslip.o(module11Main)
+    print_string                             0x00000cdf   Thumb Code    34  module11_payslip.o(module11Main)
+    print_dummy                              0x00000d01   Thumb Code    30  module11_payslip.o(module11Main)
+    $v0                                      0x00000d30   Number         0  module1_structgenerator.o(module1Main)
+    module1Main                              0x00000d30   Section      216  module1_structgenerator.o(module1Main)
+    $v0                                      0x00000e08   Number         0  module2_attendancedata.o(module2Main)
+    module2Main                              0x00000e08   Section      136  module2_attendancedata.o(module2Main)
+    $v0                                      0x00000e90   Number         0  module3_leavemanagement.o(module3Main)
+    module3Main                              0x00000e90   Section       92  module3_leavemanagement.o(module3Main)
+    $v0                                      0x00000eec   Number         0  module4_overtimecalculation.o(module4Main)
+    module4Main                              0x00000eec   Section      112  module4_overtimecalculation.o(module4Main)
+    $v0                                      0x00000f5c   Number         0  module5_allowanceprocessor.o(module5Main)
+    module5Main                              0x00000f5c   Section      144  module5_allowanceprocessor.o(module5Main)
+    $v0                                      0x00000fec   Number         0  module6_taxcomputation.o(module6Main)
+    module6Main                              0x00000fec   Section      184  module6_taxcomputation.o(module6Main)
+    $v0                                      0x000010a4   Number         0  module7_netsalary.o(module7Main)
+    module7Main                              0x000010a4   Section      120  module7_netsalary.o(module7Main)
+    $v0                                      0x0000111c   Number         0  module8_sortstruct.o(module8Main)
+    module8Main                              0x0000111c   Section      184  module8_sortstruct.o(module8Main)
+    $v0                                      0x000011d4   Number         0  module9_departmentalsalary.o(module9Main)
+    module9Main                              0x000011d4   Section       96  module9_departmentalsalary.o(module9Main)
+    $v0                                      0x00001234   Number         0  main.o(payRollSysMain)
+    payRollSysMain                           0x00001234   Section       46  main.o(payRollSysMain)
+    $v0                                      0x00001262   Number         0  fpinit.o(x$fpl$fpinit)
+    x$fpl$fpinit                             0x00001262   Section       26  fpinit.o(x$fpl$fpinit)
+    payRollSysData                           0x20010000   Section     3964  data.o(payRollSysData)
+    name1                                    0x20010028   Data          16  data.o(payRollSysData)
+    name2                                    0x20010038   Data          25  data.o(payRollSysData)
+    name3                                    0x20010051   Data          13  data.o(payRollSysData)
+    name4                                    0x2001005e   Data          18  data.o(payRollSysData)
+    name5                                    0x20010070   Data          18  data.o(payRollSysData)
+    name6                                    0x20010082   Data          27  data.o(payRollSysData)
+    name7                                    0x2001009d   Data          21  data.o(payRollSysData)
+    att1                                     0x20010120   Data          31  data.o(payRollSysData)
+    att2                                     0x2001013f   Data          31  data.o(payRollSysData)
+    att3                                     0x2001015e   Data          31  data.o(payRollSysData)
+    att4                                     0x2001017d   Data          31  data.o(payRollSysData)
+    att5                                     0x2001019c   Data          31  data.o(payRollSysData)
+    att6                                     0x200101bb   Data          31  data.o(payRollSysData)
+    att7                                     0x200101da   Data          31  data.o(payRollSysData)
+    pr1                                      0x20010220   Data          24  data.o(payRollSysData)
+    pr2                                      0x20010238   Data          24  data.o(payRollSysData)
+    pr3                                      0x20010250   Data          24  data.o(payRollSysData)
+    pr4                                      0x20010268   Data          24  data.o(payRollSysData)
+    pr5                                      0x20010280   Data          24  data.o(payRollSysData)
+    pr6                                      0x20010298   Data          24  data.o(payRollSysData)
+    pr7                                      0x200102b0   Data          24  data.o(payRollSysData)
+    line_1                                   0x20010318   Data          63  data.o(payRollSysData)
+    line_2                                   0x20010357   Data          63  data.o(payRollSysData)
+    header                                   0x20010396   Data          63  data.o(payRollSysData)
+    line_3                                   0x200103d5   Data          63  data.o(payRollSysData)
+    line_4                                   0x20010414   Data          63  data.o(payRollSysData)
+    line_5                                   0x20010453   Data          63  data.o(payRollSysData)
+    line_id                                  0x20010492   Data          63  data.o(payRollSysData)
+    line_name                                0x200104d1   Data          63  data.o(payRollSysData)
+    line_grade                               0x20010510   Data          63  data.o(payRollSysData)
+    line_dept                                0x2001054f   Data          63  data.o(payRollSysData)
+    line_6                                   0x2001058e   Data          63  data.o(payRollSysData)
+    line_7                                   0x200105cd   Data          63  data.o(payRollSysData)
+    line_acc                                 0x2001060c   Data          63  data.o(payRollSysData)
+    line_8                                   0x2001064b   Data          63  data.o(payRollSysData)
+    line_9                                   0x2001068a   Data          63  data.o(payRollSysData)
+    line_att                                 0x200106c9   Data          63  data.o(payRollSysData)
+    line_10                                  0x20010708   Data          63  data.o(payRollSysData)
+    line_11                                  0x20010747   Data          63  data.o(payRollSysData)
+    line_work                                0x20010786   Data          63  data.o(payRollSysData)
+    line_present                             0x200107c5   Data          63  data.o(payRollSysData)
+    line_12                                  0x20010804   Data          63  data.o(payRollSysData)
+    line_13                                  0x20010843   Data          63  data.o(payRollSysData)
+    line_salary                              0x20010882   Data          63  data.o(payRollSysData)
+    line_14                                  0x200108c1   Data          63  data.o(payRollSysData)
+    line_15                                  0x20010900   Data          63  data.o(payRollSysData)
+    line_base                                0x2001093f   Data          63  data.o(payRollSysData)
+    line_allow                               0x2001097e   Data          63  data.o(payRollSysData)
+    line_hra                                 0x200109bd   Data          63  data.o(payRollSysData)
+    line_med                                 0x200109fc   Data          63  data.o(payRollSysData)
+    line_trans                               0x20010a3b   Data          63  data.o(payRollSysData)
+    line_over                                0x20010a7a   Data          63  data.o(payRollSysData)
+    line_tax                                 0x20010ab9   Data          63  data.o(payRollSysData)
+    line_leave                               0x20010af8   Data          63  data.o(payRollSysData)
+    line_16                                  0x20010b37   Data          63  data.o(payRollSysData)
+    line_net                                 0x20010b76   Data          63  data.o(payRollSysData)
+    line_bonus                               0x20010bb5   Data          63  data.o(payRollSysData)
+    line_17                                  0x20010bf4   Data          63  data.o(payRollSysData)
+    line_final                               0x20010c33   Data          63  data.o(payRollSysData)
+    line_18                                  0x20010c72   Data          63  data.o(payRollSysData)
+    line_19                                  0x20010cb1   Data          63  data.o(payRollSysData)
+    line_20                                  0x20010cf0   Data          63  data.o(payRollSysData)
+    line_21                                  0x20010d2f   Data          63  data.o(payRollSysData)
+    line_22                                  0x20010d6e   Data          63  data.o(payRollSysData)
+    blank_1                                  0x20010dad   Data          63  data.o(payRollSysData)
+    blank_2                                  0x20010dec   Data          63  data.o(payRollSysData)
+    admin                                    0x20010f60   Data           6  data.o(payRollSysData)
+    hr                                       0x20010f66   Data           3  data.o(payRollSysData)
+    i_t                                      0x20010f69   Data           3  data.o(payRollSysData)
 
     Global Symbols
 
@@ -543,53 +543,53 @@ Image Symbol Table
     SysTick_Handler                          0x00000701   Thumb Code     4  startup_armcm4.o(.text.Default_Handler)
     UsageFault_Handler                       0x00000701   Thumb Code     4  startup_armcm4.o(.text.Default_Handler)
     HardFault_Handler                        0x00000705   Thumb Code     4  startup_armcm4.o(.text.HardFault_Handler)
-    ITM_SendChar_C                           0x00000709   Thumb Code    20  print.o(.text.ITM_SendChar_C)
-    Reset_Handler                            0x0000071d   Thumb Code     8  startup_armcm4.o(.text.Reset_Handler)
-    SystemInit                               0x00000725   Thumb Code    54  system_armcm4.o(.text.SystemInit)
-    module10_bonusCalculator                 0x0000075d   Thumb Code   144  module10_bonuscalculator.o(module10Main)
-    module11_paySlip                         0x000007fd   Thumb Code   260  module11_payslip.o(module11Main)
-    module1_structGenerator                  0x00000d39   Thumb Code   154  module1_structgenerator.o(module1Main)
-    module2_attendanceData                   0x00000e11   Thumb Code   110  module2_attendancedata.o(module2Main)
-    module3_leaveManagement                  0x00000e99   Thumb Code    78  module3_leavemanagement.o(module3Main)
-    module4_overtimeCalculation              0x00000ef5   Thumb Code    98  module4_overtimecalculation.o(module4Main)
-    module5_allowanceProcessor               0x00000f65   Thumb Code   132  module5_allowanceprocessor.o(module5Main)
-    module6_taxComputation                   0x00000ff5   Thumb Code   168  module6_taxcomputation.o(module6Main)
-    module7_netSalary                        0x000010ad   Thumb Code   106  module7_netsalary.o(module7Main)
-    module8_sortStruct                       0x00001125   Thumb Code   168  module8_sortstruct.o(module8Main)
-    module9_departmentalSalary               0x000011dd   Thumb Code    80  module9_departmentalsalary.o(module9Main)
-    main                                     0x0000123d   Thumb Code     0  main.o(payRollSysMain)
-    _fp_init                                 0x0000126b   Thumb Code    26  fpinit.o(x$fpl$fpinit)
-    __fplib_config_fpu_vfp                   0x00001283   Thumb Code     0  fpinit.o(x$fpl$fpinit)
-    __fplib_config_pureend_doubles           0x00001283   Thumb Code     0  fpinit.o(x$fpl$fpinit)
-    Region$$Table$$Base                      0x00001284   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x000012a4   Number         0  anon$$obj.o(Region$$Table)
+    Reset_Handler                            0x00000709   Thumb Code     8  startup_armcm4.o(.text.Reset_Handler)
+    SystemInit                               0x00000711   Thumb Code    54  system_armcm4.o(.text.SystemInit)
+    module10_bonusCalculator                 0x00000749   Thumb Code   144  module10_bonuscalculator.o(module10Main)
+    module11_paySlip                         0x000007e9   Thumb Code   260  module11_payslip.o(module11Main)
+    module1_structGenerator                  0x00000d31   Thumb Code   154  module1_structgenerator.o(module1Main)
+    module2_attendanceData                   0x00000e09   Thumb Code   110  module2_attendancedata.o(module2Main)
+    module3_leaveManagement                  0x00000e91   Thumb Code    78  module3_leavemanagement.o(module3Main)
+    module4_overtimeCalculation              0x00000eed   Thumb Code    98  module4_overtimecalculation.o(module4Main)
+    module5_allowanceProcessor               0x00000f5d   Thumb Code   132  module5_allowanceprocessor.o(module5Main)
+    module6_taxComputation                   0x00000fed   Thumb Code   168  module6_taxcomputation.o(module6Main)
+    module7_netSalary                        0x000010a5   Thumb Code   106  module7_netsalary.o(module7Main)
+    module8_sortStruct                       0x0000111d   Thumb Code   168  module8_sortstruct.o(module8Main)
+    module9_departmentalSalary               0x000011d5   Thumb Code    80  module9_departmentalsalary.o(module9Main)
+    main                                     0x00001235   Thumb Code     0  main.o(payRollSysMain)
+    _fp_init                                 0x00001263   Thumb Code    26  fpinit.o(x$fpl$fpinit)
+    __fplib_config_fpu_vfp                   0x0000127b   Thumb Code     0  fpinit.o(x$fpl$fpinit)
+    __fplib_config_pureend_doubles           0x0000127b   Thumb Code     0  fpinit.o(x$fpl$fpinit)
+    Region$$Table$$Base                      0x0000127c   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x0000129c   Number         0  anon$$obj.o(Region$$Table)
     SystemCoreClock                          0x20000000   Data           4  system_armcm4.o(.data.SystemCoreClock)
     struct_base                              0x20010000   Data           4  data.o(payRollSysData)
     struct_num                               0x20010004   Data           4  data.o(payRollSysData)
     struct_size                              0x20010008   Data           4  data.o(payRollSysData)
-    emp_id                                   0x2001000c   Data          20  data.o(payRollSysData)
-    name_ptr                                 0x2001007c   Data          20  data.o(payRollSysData)
-    salary                                   0x20010090   Data          20  data.o(payRollSysData)
-    grade                                    0x200100a4   Data           5  data.o(payRollSysData)
-    dept_code                                0x200100a9   Data           5  data.o(payRollSysData)
-    account                                  0x200100b0   Data          20  data.o(payRollSysData)
-    attptr_base                              0x200100c4   Data           4  data.o(payRollSysData)
-    attptr_size                              0x200100c8   Data           4  data.o(payRollSysData)
-    link_att                                 0x20010168   Data          20  data.o(payRollSysData)
-    allow_base                               0x2001017c   Data           4  data.o(payRollSysData)
-    allow_size                               0x20010180   Data           4  data.o(payRollSysData)
-    payroll                                  0x200101fc   Data          20  data.o(payRollSysData)
-    overtime                                 0x20010210   Data           5  data.o(payRollSysData)
-    sort_base                                0x20010218   Data           4  data.o(payRollSysData)
-    d_summary                                0x2001021c   Data          12  data.o(payRollSysData)
-    perform                                  0x20010228   Data          20  data.o(payRollSysData)
-    slip_ptr                                 0x20010d50   Data         180  data.o(payRollSysData)
-    str_dum                                  0x20010e04   Data          63  data.o(payRollSysData)
-    int_dum                                  0x20010e43   Data          63  data.o(payRollSysData)
-    nl                                       0x20010e82   Data           2  data.o(payRollSysData)
-    dept_name                                0x20010e90   Data          12  data.o(payRollSysData)
-    Image$$ARM_LIB_HEAP$$ZI$$Base            0x20010ea0   Number         0  anon$$obj.o ABSOLUTE
-    Image$$ARM_LIB_HEAP$$ZI$$Limit           0x20011aa0   Number         0  anon$$obj.o ABSOLUTE
+    emp_id                                   0x2001000c   Data          28  data.o(payRollSysData)
+    name_ptr                                 0x200100b4   Data          28  data.o(payRollSysData)
+    salary                                   0x200100d0   Data          28  data.o(payRollSysData)
+    grade                                    0x200100ec   Data           7  data.o(payRollSysData)
+    dept_code                                0x200100f3   Data           7  data.o(payRollSysData)
+    account                                  0x200100fc   Data          28  data.o(payRollSysData)
+    attptr_base                              0x20010118   Data           4  data.o(payRollSysData)
+    attptr_size                              0x2001011c   Data           4  data.o(payRollSysData)
+    link_att                                 0x200101fc   Data          28  data.o(payRollSysData)
+    allow_base                               0x20010218   Data           4  data.o(payRollSysData)
+    allow_size                               0x2001021c   Data           4  data.o(payRollSysData)
+    payroll                                  0x200102c8   Data          28  data.o(payRollSysData)
+    overtime                                 0x200102e4   Data           7  data.o(payRollSysData)
+    sort_base                                0x200102ec   Data           4  data.o(payRollSysData)
+    d_summary                                0x200102f0   Data          12  data.o(payRollSysData)
+    perform                                  0x200102fc   Data          28  data.o(payRollSysData)
+    slip_ptr                                 0x20010e2c   Data         180  data.o(payRollSysData)
+    str_dum                                  0x20010ee0   Data          63  data.o(payRollSysData)
+    int_dum                                  0x20010f1f   Data          63  data.o(payRollSysData)
+    nl                                       0x20010f5e   Data           2  data.o(payRollSysData)
+    dept_name                                0x20010f6c   Data          12  data.o(payRollSysData)
+    ITM                                      0x20010f78   Data           4  data.o(payRollSysData)
+    Image$$ARM_LIB_HEAP$$ZI$$Base            0x20010f80   Number         0  anon$$obj.o ABSOLUTE
+    Image$$ARM_LIB_HEAP$$ZI$$Limit           0x20011b80   Number         0  anon$$obj.o ABSOLUTE
     Image$$ARM_LIB_STACK$$ZI$$Limit          0x20040000   Number         0  anon$$obj.o ABSOLUTE
 
 
@@ -600,127 +600,126 @@ Memory Map of the image
 
   Image entry point : Not specified.
 
-  Load Region LR_ROM (Base: 0x00000000, Size: 0x00002144, Max: 0x00080000, ABSOLUTE, COMPRESSED[0x00001684])
+  Load Region LR_ROM (Base: 0x00000000, Size: 0x0000221c, Max: 0x00080000, ABSOLUTE, COMPRESSED[0x000016e0])
 
-    Execution Region ER_ROM (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x000012a4, Max: 0x00080000, ABSOLUTE)
+    Execution Region ER_ROM (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x0000129c, Max: 0x00080000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x00000000   0x00000000   0x000003c0   Data   RO           68    RESET               startup_armcm4.o
-    0x000003c0   0x000003c0   0x00000008   Code   RO           89  * !!!main             c_w.l(__main.o)
-    0x000003c8   0x000003c8   0x0000005c   Code   RO          269    !!!scatter          c_w.l(__scatter.o)
-    0x00000424   0x00000424   0x00000064   Code   RO          267    !!dclz77c           c_w.l(__dclz77c.o)
-    0x00000488   0x00000488   0x0000001a   Code   RO          273    !!handler_copy      c_w.l(__scatter_copy.o)
+    0x00000000   0x00000000   0x000003c0   Data   RO           60    RESET               startup_armcm4.o
+    0x000003c0   0x000003c0   0x00000008   Code   RO           81  * !!!main             c_w.l(__main.o)
+    0x000003c8   0x000003c8   0x0000005c   Code   RO          261    !!!scatter          c_w.l(__scatter.o)
+    0x00000424   0x00000424   0x00000064   Code   RO          259    !!dclz77c           c_w.l(__dclz77c.o)
+    0x00000488   0x00000488   0x0000001a   Code   RO          265    !!handler_copy      c_w.l(__scatter_copy.o)
     0x000004a2   0x000004a2   0x00000002   PAD
-    0x000004a4   0x000004a4   0x00000002   Code   RO          270    !!handler_null      c_w.l(__scatter.o)
-    0x000004a6   0x000004a6   0x00000002   Code   RO          121    .ARM.Collect$$libinit$$00000000  c_w.l(libinit.o)
-    0x000004a8   0x000004a8   0x00000004   Code   RO          131    .ARM.Collect$$libinit$$00000001  c_w.l(libinit2.o)
-    0x000004ac   0x000004ac   0x00000000   Code   RO          134    .ARM.Collect$$libinit$$00000004  c_w.l(libinit2.o)
-    0x000004ac   0x000004ac   0x00000000   Code   RO          136    .ARM.Collect$$libinit$$00000006  c_w.l(libinit2.o)
-    0x000004ac   0x000004ac   0x00000000   Code   RO          139    .ARM.Collect$$libinit$$0000000C  c_w.l(libinit2.o)
-    0x000004ac   0x000004ac   0x00000000   Code   RO          141    .ARM.Collect$$libinit$$0000000E  c_w.l(libinit2.o)
-    0x000004ac   0x000004ac   0x00000000   Code   RO          143    .ARM.Collect$$libinit$$00000010  c_w.l(libinit2.o)
-    0x000004ac   0x000004ac   0x00000000   Code   RO          146    .ARM.Collect$$libinit$$00000013  c_w.l(libinit2.o)
-    0x000004ac   0x000004ac   0x00000000   Code   RO          148    .ARM.Collect$$libinit$$00000015  c_w.l(libinit2.o)
-    0x000004ac   0x000004ac   0x00000000   Code   RO          150    .ARM.Collect$$libinit$$00000017  c_w.l(libinit2.o)
-    0x000004ac   0x000004ac   0x00000000   Code   RO          152    .ARM.Collect$$libinit$$00000019  c_w.l(libinit2.o)
-    0x000004ac   0x000004ac   0x00000000   Code   RO          154    .ARM.Collect$$libinit$$0000001B  c_w.l(libinit2.o)
-    0x000004ac   0x000004ac   0x00000000   Code   RO          156    .ARM.Collect$$libinit$$0000001D  c_w.l(libinit2.o)
-    0x000004ac   0x000004ac   0x00000000   Code   RO          158    .ARM.Collect$$libinit$$0000001F  c_w.l(libinit2.o)
-    0x000004ac   0x000004ac   0x00000000   Code   RO          160    .ARM.Collect$$libinit$$00000021  c_w.l(libinit2.o)
-    0x000004ac   0x000004ac   0x00000000   Code   RO          162    .ARM.Collect$$libinit$$00000023  c_w.l(libinit2.o)
-    0x000004ac   0x000004ac   0x00000000   Code   RO          164    .ARM.Collect$$libinit$$00000025  c_w.l(libinit2.o)
-    0x000004ac   0x000004ac   0x00000000   Code   RO          166    .ARM.Collect$$libinit$$00000027  c_w.l(libinit2.o)
-    0x000004ac   0x000004ac   0x0000000c   Code   RO          180    .ARM.Collect$$libinit$$0000002C  c_w.l(libinit5.o)
-    0x000004b8   0x000004b8   0x00000000   Code   RO          172    .ARM.Collect$$libinit$$00000030  c_w.l(libinit2.o)
-    0x000004b8   0x000004b8   0x00000000   Code   RO          174    .ARM.Collect$$libinit$$00000032  c_w.l(libinit2.o)
-    0x000004b8   0x000004b8   0x00000000   Code   RO          176    .ARM.Collect$$libinit$$00000034  c_w.l(libinit2.o)
-    0x000004b8   0x000004b8   0x00000002   Code   RO          177    .ARM.Collect$$libinit$$00000035  c_w.l(libinit2.o)
+    0x000004a4   0x000004a4   0x00000002   Code   RO          262    !!handler_null      c_w.l(__scatter.o)
+    0x000004a6   0x000004a6   0x00000002   Code   RO          113    .ARM.Collect$$libinit$$00000000  c_w.l(libinit.o)
+    0x000004a8   0x000004a8   0x00000004   Code   RO          123    .ARM.Collect$$libinit$$00000001  c_w.l(libinit2.o)
+    0x000004ac   0x000004ac   0x00000000   Code   RO          126    .ARM.Collect$$libinit$$00000004  c_w.l(libinit2.o)
+    0x000004ac   0x000004ac   0x00000000   Code   RO          128    .ARM.Collect$$libinit$$00000006  c_w.l(libinit2.o)
+    0x000004ac   0x000004ac   0x00000000   Code   RO          131    .ARM.Collect$$libinit$$0000000C  c_w.l(libinit2.o)
+    0x000004ac   0x000004ac   0x00000000   Code   RO          133    .ARM.Collect$$libinit$$0000000E  c_w.l(libinit2.o)
+    0x000004ac   0x000004ac   0x00000000   Code   RO          135    .ARM.Collect$$libinit$$00000010  c_w.l(libinit2.o)
+    0x000004ac   0x000004ac   0x00000000   Code   RO          138    .ARM.Collect$$libinit$$00000013  c_w.l(libinit2.o)
+    0x000004ac   0x000004ac   0x00000000   Code   RO          140    .ARM.Collect$$libinit$$00000015  c_w.l(libinit2.o)
+    0x000004ac   0x000004ac   0x00000000   Code   RO          142    .ARM.Collect$$libinit$$00000017  c_w.l(libinit2.o)
+    0x000004ac   0x000004ac   0x00000000   Code   RO          144    .ARM.Collect$$libinit$$00000019  c_w.l(libinit2.o)
+    0x000004ac   0x000004ac   0x00000000   Code   RO          146    .ARM.Collect$$libinit$$0000001B  c_w.l(libinit2.o)
+    0x000004ac   0x000004ac   0x00000000   Code   RO          148    .ARM.Collect$$libinit$$0000001D  c_w.l(libinit2.o)
+    0x000004ac   0x000004ac   0x00000000   Code   RO          150    .ARM.Collect$$libinit$$0000001F  c_w.l(libinit2.o)
+    0x000004ac   0x000004ac   0x00000000   Code   RO          152    .ARM.Collect$$libinit$$00000021  c_w.l(libinit2.o)
+    0x000004ac   0x000004ac   0x00000000   Code   RO          154    .ARM.Collect$$libinit$$00000023  c_w.l(libinit2.o)
+    0x000004ac   0x000004ac   0x00000000   Code   RO          156    .ARM.Collect$$libinit$$00000025  c_w.l(libinit2.o)
+    0x000004ac   0x000004ac   0x00000000   Code   RO          158    .ARM.Collect$$libinit$$00000027  c_w.l(libinit2.o)
+    0x000004ac   0x000004ac   0x0000000c   Code   RO          172    .ARM.Collect$$libinit$$0000002C  c_w.l(libinit5.o)
+    0x000004b8   0x000004b8   0x00000000   Code   RO          164    .ARM.Collect$$libinit$$00000030  c_w.l(libinit2.o)
+    0x000004b8   0x000004b8   0x00000000   Code   RO          166    .ARM.Collect$$libinit$$00000032  c_w.l(libinit2.o)
+    0x000004b8   0x000004b8   0x00000000   Code   RO          168    .ARM.Collect$$libinit$$00000034  c_w.l(libinit2.o)
+    0x000004b8   0x000004b8   0x00000002   Code   RO          169    .ARM.Collect$$libinit$$00000035  c_w.l(libinit2.o)
     0x000004ba   0x000004ba   0x00000002   PAD
-    0x000004bc   0x000004bc   0x00000008   Code   RO          181    .ARM.Collect$$libinit$$0000273D  c_w.l(libinit5.o)
-    0x000004c4   0x000004c4   0x00000002   Code   RO          206    .ARM.Collect$$libshutdown$$00000000  c_w.l(libshutdown.o)
-    0x000004c6   0x000004c6   0x00000000   Code   RO          218    .ARM.Collect$$libshutdown$$00000002  c_w.l(libshutdown2.o)
-    0x000004c6   0x000004c6   0x00000000   Code   RO          220    .ARM.Collect$$libshutdown$$00000004  c_w.l(libshutdown2.o)
-    0x000004c6   0x000004c6   0x00000000   Code   RO          223    .ARM.Collect$$libshutdown$$00000007  c_w.l(libshutdown2.o)
-    0x000004c6   0x000004c6   0x00000000   Code   RO          226    .ARM.Collect$$libshutdown$$0000000A  c_w.l(libshutdown2.o)
-    0x000004c6   0x000004c6   0x00000000   Code   RO          228    .ARM.Collect$$libshutdown$$0000000C  c_w.l(libshutdown2.o)
-    0x000004c6   0x000004c6   0x00000000   Code   RO          231    .ARM.Collect$$libshutdown$$0000000F  c_w.l(libshutdown2.o)
-    0x000004c6   0x000004c6   0x00000002   Code   RO          232    .ARM.Collect$$libshutdown$$00000010  c_w.l(libshutdown2.o)
-    0x000004c8   0x000004c8   0x00000000   Code   RO           91    .ARM.Collect$$rtentry$$00000000  c_w.l(__rtentry.o)
-    0x000004c8   0x000004c8   0x00000000   Code   RO           93    .ARM.Collect$$rtentry$$00000002  c_w.l(__rtentry2.o)
-    0x000004c8   0x000004c8   0x00000004   Code   RO          107    .ARM.Collect$$rtentry$$00000007  c_w.l(__rtentry7.o)
-    0x000004cc   0x000004cc   0x00000000   Code   RO           95    .ARM.Collect$$rtentry$$00000009  c_w.l(__rtentry2.o)
-    0x000004cc   0x000004cc   0x00000004   Code   RO           96    .ARM.Collect$$rtentry$$0000000A  c_w.l(__rtentry2.o)
-    0x000004d0   0x000004d0   0x00000000   Code   RO           98    .ARM.Collect$$rtentry$$0000000C  c_w.l(__rtentry2.o)
-    0x000004d0   0x000004d0   0x00000008   Code   RO           99    .ARM.Collect$$rtentry$$0000000D  c_w.l(__rtentry2.o)
-    0x000004d8   0x000004d8   0x00000004   Code   RO          108    .ARM.Collect$$rtentry$$00002718  c_w.l(__rtentry7.o)
-    0x000004dc   0x000004dc   0x00000002   Code   RO          129    .ARM.Collect$$rtexit$$00000000  c_w.l(rtexit.o)
-    0x000004de   0x000004de   0x00000000   Code   RO          186    .ARM.Collect$$rtexit$$00000002  c_w.l(rtexit2.o)
-    0x000004de   0x000004de   0x00000004   Code   RO          187    .ARM.Collect$$rtexit$$00000003  c_w.l(rtexit2.o)
-    0x000004e2   0x000004e2   0x00000006   Code   RO          188    .ARM.Collect$$rtexit$$00000004  c_w.l(rtexit2.o)
-    0x000004e8   0x000004e8   0x00000004   Code   RO          192    .emb_text           c_w.l(argv_veneer.o)
-    0x000004ec   0x000004ec   0x00000012   Code   RO          114    .text               c_w.l(exit.o)
-    0x000004fe   0x000004fe   0x00000002   Code   RO          182    .text               c_w.l(use_no_semi.o)
-    0x00000500   0x00000500   0x00000000   Code   RO          184    .text               c_w.l(indicate_semi.o)
-    0x00000500   0x00000500   0x0000000c   Code   RO          196    .text               c_w.l(sys_exit.o)
-    0x0000050c   0x0000050c   0x0000012e   Code   RO          202    .text               c_w.l(_get_argv_nomalloc.o)
-    0x0000063a   0x0000063a   0x00000018   Code   RO          207    .text               c_w.l(sys_command.o)
-    0x00000652   0x00000652   0x00000004   Code   RO          211    .text               c_w.l(hrguard.o)
-    0x00000656   0x00000656   0x0000000e   Code   RO          213    .text               c_w.l(defsig_rtmem_outer.o)
-    0x00000664   0x00000664   0x0000000a   Code   RO          235    .text               c_w.l(defsig_exit.o)
+    0x000004bc   0x000004bc   0x00000008   Code   RO          173    .ARM.Collect$$libinit$$0000273D  c_w.l(libinit5.o)
+    0x000004c4   0x000004c4   0x00000002   Code   RO          198    .ARM.Collect$$libshutdown$$00000000  c_w.l(libshutdown.o)
+    0x000004c6   0x000004c6   0x00000000   Code   RO          210    .ARM.Collect$$libshutdown$$00000002  c_w.l(libshutdown2.o)
+    0x000004c6   0x000004c6   0x00000000   Code   RO          212    .ARM.Collect$$libshutdown$$00000004  c_w.l(libshutdown2.o)
+    0x000004c6   0x000004c6   0x00000000   Code   RO          215    .ARM.Collect$$libshutdown$$00000007  c_w.l(libshutdown2.o)
+    0x000004c6   0x000004c6   0x00000000   Code   RO          218    .ARM.Collect$$libshutdown$$0000000A  c_w.l(libshutdown2.o)
+    0x000004c6   0x000004c6   0x00000000   Code   RO          220    .ARM.Collect$$libshutdown$$0000000C  c_w.l(libshutdown2.o)
+    0x000004c6   0x000004c6   0x00000000   Code   RO          223    .ARM.Collect$$libshutdown$$0000000F  c_w.l(libshutdown2.o)
+    0x000004c6   0x000004c6   0x00000002   Code   RO          224    .ARM.Collect$$libshutdown$$00000010  c_w.l(libshutdown2.o)
+    0x000004c8   0x000004c8   0x00000000   Code   RO           83    .ARM.Collect$$rtentry$$00000000  c_w.l(__rtentry.o)
+    0x000004c8   0x000004c8   0x00000000   Code   RO           85    .ARM.Collect$$rtentry$$00000002  c_w.l(__rtentry2.o)
+    0x000004c8   0x000004c8   0x00000004   Code   RO           99    .ARM.Collect$$rtentry$$00000007  c_w.l(__rtentry7.o)
+    0x000004cc   0x000004cc   0x00000000   Code   RO           87    .ARM.Collect$$rtentry$$00000009  c_w.l(__rtentry2.o)
+    0x000004cc   0x000004cc   0x00000004   Code   RO           88    .ARM.Collect$$rtentry$$0000000A  c_w.l(__rtentry2.o)
+    0x000004d0   0x000004d0   0x00000000   Code   RO           90    .ARM.Collect$$rtentry$$0000000C  c_w.l(__rtentry2.o)
+    0x000004d0   0x000004d0   0x00000008   Code   RO           91    .ARM.Collect$$rtentry$$0000000D  c_w.l(__rtentry2.o)
+    0x000004d8   0x000004d8   0x00000004   Code   RO          100    .ARM.Collect$$rtentry$$00002718  c_w.l(__rtentry7.o)
+    0x000004dc   0x000004dc   0x00000002   Code   RO          121    .ARM.Collect$$rtexit$$00000000  c_w.l(rtexit.o)
+    0x000004de   0x000004de   0x00000000   Code   RO          178    .ARM.Collect$$rtexit$$00000002  c_w.l(rtexit2.o)
+    0x000004de   0x000004de   0x00000004   Code   RO          179    .ARM.Collect$$rtexit$$00000003  c_w.l(rtexit2.o)
+    0x000004e2   0x000004e2   0x00000006   Code   RO          180    .ARM.Collect$$rtexit$$00000004  c_w.l(rtexit2.o)
+    0x000004e8   0x000004e8   0x00000004   Code   RO          184    .emb_text           c_w.l(argv_veneer.o)
+    0x000004ec   0x000004ec   0x00000012   Code   RO          106    .text               c_w.l(exit.o)
+    0x000004fe   0x000004fe   0x00000002   Code   RO          174    .text               c_w.l(use_no_semi.o)
+    0x00000500   0x00000500   0x00000000   Code   RO          176    .text               c_w.l(indicate_semi.o)
+    0x00000500   0x00000500   0x0000000c   Code   RO          188    .text               c_w.l(sys_exit.o)
+    0x0000050c   0x0000050c   0x0000012e   Code   RO          194    .text               c_w.l(_get_argv_nomalloc.o)
+    0x0000063a   0x0000063a   0x00000018   Code   RO          199    .text               c_w.l(sys_command.o)
+    0x00000652   0x00000652   0x00000004   Code   RO          203    .text               c_w.l(hrguard.o)
+    0x00000656   0x00000656   0x0000000e   Code   RO          205    .text               c_w.l(defsig_rtmem_outer.o)
+    0x00000664   0x00000664   0x0000000a   Code   RO          227    .text               c_w.l(defsig_exit.o)
     0x0000066e   0x0000066e   0x00000002   PAD
-    0x00000670   0x00000670   0x00000050   Code   RO          237    .text               c_w.l(defsig_rtmem_inner.o)
-    0x000006c0   0x000006c0   0x00000032   Code   RO          241    .text               c_w.l(defsig_general.o)
-    0x000006f2   0x000006f2   0x0000000e   Code   RO          243    .text               c_w.l(sys_wrch.o)
-    0x00000700   0x00000700   0x00000004   Code   RO           62    .text.Default_Handler  startup_armcm4.o
-    0x00000704   0x00000704   0x00000004   Code   RO           66    .text.HardFault_Handler  startup_armcm4.o
-    0x00000708   0x00000708   0x00000014   Code   RO           54    .text.ITM_SendChar_C  print.o
-    0x0000071c   0x0000071c   0x00000008   Code   RO           64    .text.Reset_Handler  startup_armcm4.o
-    0x00000724   0x00000724   0x00000036   Code   RO           78    .text.SystemInit    system_armcm4.o
-    0x0000075a   0x0000075a   0x00000002   PAD
-    0x0000075c   0x0000075c   0x000000a0   Code   RO           45    module10Main        module10_bonuscalculator.o
-    0x000007fc   0x000007fc   0x0000053c   Code   RO           49    module11Main        module11_payslip.o
-    0x00000d38   0x00000d38   0x000000d8   Code   RO            9    module1Main         module1_structgenerator.o
-    0x00000e10   0x00000e10   0x00000088   Code   RO           13    module2Main         module2_attendancedata.o
-    0x00000e98   0x00000e98   0x0000005c   Code   RO           17    module3Main         module3_leavemanagement.o
-    0x00000ef4   0x00000ef4   0x00000070   Code   RO           21    module4Main         module4_overtimecalculation.o
-    0x00000f64   0x00000f64   0x00000090   Code   RO           25    module5Main         module5_allowanceprocessor.o
-    0x00000ff4   0x00000ff4   0x000000b8   Code   RO           29    module6Main         module6_taxcomputation.o
-    0x000010ac   0x000010ac   0x00000078   Code   RO           33    module7Main         module7_netsalary.o
-    0x00001124   0x00001124   0x000000b8   Code   RO           37    module8Main         module8_sortstruct.o
-    0x000011dc   0x000011dc   0x00000060   Code   RO           41    module9Main         module9_departmentalsalary.o
-    0x0000123c   0x0000123c   0x0000002e   Code   RO            3  * payRollSysMain      main.o
-    0x0000126a   0x0000126a   0x0000001a   Code   RO          194    x$fpl$fpinit        fz_wm.l(fpinit.o)
-    0x00001284   0x00001284   0x00000020   Data   RO          266    Region$$Table       anon$$obj.o
+    0x00000670   0x00000670   0x00000050   Code   RO          229    .text               c_w.l(defsig_rtmem_inner.o)
+    0x000006c0   0x000006c0   0x00000032   Code   RO          233    .text               c_w.l(defsig_general.o)
+    0x000006f2   0x000006f2   0x0000000e   Code   RO          235    .text               c_w.l(sys_wrch.o)
+    0x00000700   0x00000700   0x00000004   Code   RO           54    .text.Default_Handler  startup_armcm4.o
+    0x00000704   0x00000704   0x00000004   Code   RO           58    .text.HardFault_Handler  startup_armcm4.o
+    0x00000708   0x00000708   0x00000008   Code   RO           56    .text.Reset_Handler  startup_armcm4.o
+    0x00000710   0x00000710   0x00000036   Code   RO           70    .text.SystemInit    system_armcm4.o
+    0x00000746   0x00000746   0x00000002   PAD
+    0x00000748   0x00000748   0x000000a0   Code   RO           45    module10Main        module10_bonuscalculator.o
+    0x000007e8   0x000007e8   0x00000548   Code   RO           49    module11Main        module11_payslip.o
+    0x00000d30   0x00000d30   0x000000d8   Code   RO            9    module1Main         module1_structgenerator.o
+    0x00000e08   0x00000e08   0x00000088   Code   RO           13    module2Main         module2_attendancedata.o
+    0x00000e90   0x00000e90   0x0000005c   Code   RO           17    module3Main         module3_leavemanagement.o
+    0x00000eec   0x00000eec   0x00000070   Code   RO           21    module4Main         module4_overtimecalculation.o
+    0x00000f5c   0x00000f5c   0x00000090   Code   RO           25    module5Main         module5_allowanceprocessor.o
+    0x00000fec   0x00000fec   0x000000b8   Code   RO           29    module6Main         module6_taxcomputation.o
+    0x000010a4   0x000010a4   0x00000078   Code   RO           33    module7Main         module7_netsalary.o
+    0x0000111c   0x0000111c   0x000000b8   Code   RO           37    module8Main         module8_sortstruct.o
+    0x000011d4   0x000011d4   0x00000060   Code   RO           41    module9Main         module9_departmentalsalary.o
+    0x00001234   0x00001234   0x0000002e   Code   RO            3  * payRollSysMain      main.o
+    0x00001262   0x00001262   0x0000001a   Code   RO          186    x$fpl$fpinit        fz_wm.l(fpinit.o)
+    0x0000127c   0x0000127c   0x00000020   Data   RO          258    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_NOINIT (Exec base: 0x20000000, Load base: 0x000012a4, Size: 0x00000000, Max: 0x0003f200, ABSOLUTE, UNINIT)
+    Execution Region RW_NOINIT (Exec base: 0x20000000, Load base: 0x0000129c, Size: 0x00000000, Max: 0x0003f200, ABSOLUTE, UNINIT)
 
     **** No section assigned to this execution region ****
 
 
-    Execution Region RW_RAM (Exec base: 0x20000000, Load base: 0x000012a4, Size: 0x00000004, Max: 0x0003f200, ABSOLUTE)
+    Execution Region RW_RAM (Exec base: 0x20000000, Load base: 0x0000129c, Size: 0x00000004, Max: 0x0003f200, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x000012a4   0x00000004   Data   RW           80    .data.SystemCoreClock  system_armcm4.o
+    0x20000000   0x0000129c   0x00000004   Data   RW           72    .data.SystemCoreClock  system_armcm4.o
 
 
-    Execution Region RW_DATA (Exec base: 0x20010000, Load base: 0x000012a8, Size: 0x00000e9c, Max: 0x00010000, ABSOLUTE, COMPRESSED[0x000003dc])
-
-    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
-
-    0x20010000   COMPRESSED   0x00000e9c   Data   RW            8    payRollSysData      data.o
-
-
-    Execution Region ARM_LIB_HEAP (Exec base: 0x20010ea0, Load base: 0x00001684, Size: 0x00000c00, Max: 0x00000c00, ABSOLUTE)
+    Execution Region RW_DATA (Exec base: 0x20010000, Load base: 0x000012a0, Size: 0x00000f7c, Max: 0x00010000, ABSOLUTE, COMPRESSED[0x00000440])
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20010ea0        -       0x00000c00   Zero   RW            1    ARM_LIB_HEAP.bss    anon$$obj.o
+    0x20010000   COMPRESSED   0x00000f7c   Data   RW            8    payRollSysData      data.o
 
 
-    Execution Region ARM_LIB_STACK (Exec base: 0x2003fe00, Load base: 0x00001684, Size: 0x00000200, Max: 0x00000200, ABSOLUTE)
+    Execution Region ARM_LIB_HEAP (Exec base: 0x20010f80, Load base: 0x000016e0, Size: 0x00000c00, Max: 0x00000c00, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20010f80        -       0x00000c00   Zero   RW            1    ARM_LIB_HEAP.bss    anon$$obj.o
+
+
+    Execution Region ARM_LIB_STACK (Exec base: 0x2003fe00, Load base: 0x000016e0, Size: 0x00000200, Max: 0x00000200, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -734,10 +733,10 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-         0          0          0       3740          0          0   data.o
+         0          0          0       3964          0          0   data.o
         46          0          0          0          0        228   main.o
        160         16          0          0          0        424   module10_bonuscalculator.o
-      1340         46          0          0          0        780   module11_payslip.o
+      1352         50          0          0          0        784   module11_payslip.o
        216         62          0          0          0        428   module1_structgenerator.o
        136         26          0          0          0        404   module2_attendancedata.o
         92         14          0          0          0        400   module3_leavemanagement.o
@@ -747,12 +746,11 @@ Image component sizes
        120         14          0          0          0        384   module7_netsalary.o
        184         16          0          0          0        412   module8_sortstruct.o
         96         16          0          0          0        408   module9_departmentalsalary.o
-        20          0          0          0          0        538   print.o
         16          0        960          0          0        855   startup_armcm4.o
         54          0          0          4          0       1491   system_armcm4.o
 
     ----------------------------------------------------------------------
-      2922        252        992       3744       3584       8016   Object Totals
+      2914        256        992       3968       3584       7482   Object Totals
          0          0         32          0       3584          0   (incl. Generated)
          2          0          0          0          0          0   (incl. Padding)
 
@@ -810,15 +808,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      3780        334        992       3744       3584       7812   Grand Totals
-      3780        334        992        992       3584       7812   ELF Image Totals (compressed)
-      3780        334        992        992          0          0   ROM Totals
+      3772        338        992       3968       3584       7298   Grand Totals
+      3772        338        992       1092       3584       7298   ELF Image Totals (compressed)
+      3772        338        992       1092          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 4772 (   4.66kB)
-    Total RW  Size (RW Data + ZI Data)              7328 (   7.16kB)
-    Total ROM Size (Code + RO Data + RW Data)       5764 (   5.63kB)
+    Total RO  Size (Code + RO Data)                 4764 (   4.65kB)
+    Total RW  Size (RW Data + ZI Data)              7552 (   7.38kB)
+    Total ROM Size (Code + RO Data + RW Data)       5856 (   5.72kB)
 
 ==============================================================================
 
